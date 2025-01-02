@@ -1,0 +1,9 @@
+https://github.com/anurag1703/Tobacco-Morality-Analysis-and-Prediction
+https://tobacco-morality-analysis-and-prediction-j.streamlit.app/
+
+https://github.com/anurag1703/ANN-Classification-
+https://ann-classification-churn-modelling.streamlit.app/
+
+https://github.com/anurag1703/Climate-Change-Modeling-and-Prediction
+https://climate-change-modeling-and-prediction-br.streamlit.app/
+

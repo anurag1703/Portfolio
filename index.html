@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anurag Kaushik</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills Summary</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anurag Kaushik</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills Summary</a></li>
+          <li><a href="#courses" onclick="toggleMenu()">Courses</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/pic 2.png" alt="Anurag Kaushik profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anurag Kaushik</h1>
+        <p class="section__text__p2">Data Scientist | AI/ML Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/anurag-kaushik-014a42231/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/anurag1703'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/pic 1.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>End-to-End AI Model Design <br />Deployment Expertise</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech. in Computer Science<br />THDC-IHET</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a B-Tech graduate in Computer Science with expertise in
+              Machine Learning and Data Science. I specialize in predictive modeling,
+              statistical analysis, and impactful AI/ML solutions, ensuring model reliability,
+              accuracy, and scalability.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+
+    <!-- New Experience Section -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Unified Mentor, Data Science Intern</h2>
+            <p>Nov 2024 – Present</p>
+            <p>Designed and implemented end-to-end AI models for impactful data-driven solutions including Iris Classification and Climate Change Modeling.</p>
+            <!--button class="btn btn-color-2" onclick="window.open('./assets/unified-mentor-certificate.pdf')">View Certificate</!--button-->
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">B.H.E.L HRDC, Vocational Trainee (Machine Learning)</h2>
+            <p>Aug 2023 – Sep 2023</p>
+            <p>Formulated a Generative Adversarial Network (GAN) for high-quality image generation, enhancing model capabilities with 95% accuracy.</p>
+            <button class="btn btn-color-2" onclick="window.open('./assets/bhel.pdf')">View Certificate</button>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Bharat Intern, Data Science Intern</h2>
+            <p>Oct 2023 – Nov 2023</p>
+            <p>Created and executed stock price prediction models utilizing time series analysis, achieving 90% accuracy.
+              Refined Convolutional Neural Networks (CNN) for number recognition, attaining a remarkable accuracy rate of 97.84%.</p>
+            <button class="btn btn-color-2" onclick="window.open('./assets/bh.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section (renamed) -->
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills Summary</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">AI/ML Engineering</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python/SQL</h3>
+                  <p>Expert</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Neural Networks (CNN, RNN)</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TensorFlow</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HuggingFace</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">MLOps Expertise</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MLflow</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DVC</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Version Control (Git&GitHub)</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Generative AI</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Natural Language Processing (NLP)</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Transformer Models</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Langchain</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Generative Adversarial Networks (GANs)</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project- 2.jpg"
+                alt="Tobacco Mortality Analysis"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tobacco Mortality Analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anurag1703/Tobacco-Morality-Analysis-and-Prediction'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tobacco-morality-analysis-and-prediction-j.streamlit.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/picture 7.avif"
+                alt="Customer Churn Prediction"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Customer Churn Prediction</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anurag1703/ANN-Classification-'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ann-classification-churn-modelling.streamlit.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project -4.jpg"
+                alt="Climate Change Modeling"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Climate Change Modeling</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anurag1703/Climate-Change-Modeling-and-Prediction'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://climate-change-modeling-and-prediction-br.streamlit.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:anurag101703@gmail.com">anurag101703@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/anurag-kaushik-014a42231/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills Summary</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Anurag Kaushik. All Rights Reserved.</p>
+    </footer>
+    <script>
+      // Fix for arrow navigation
+      document.querySelectorAll('.arrow').forEach(arrow => {
+        arrow.addEventListener('click', (e) => {
+          const target = e.target.getAttribute('onclick').split("'#")[1];
+          const section = document.getElementById(target);
+          if (section) {
+            window.scrollTo({
+              top: section.offsetTop,
+              behavior: 'smooth',
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
